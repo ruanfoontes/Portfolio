@@ -71,6 +71,7 @@ height: 290px;
 box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
 border-radius: 50%;
 border: 4px solid var(--vidro);
+animation: flutuar 5s ease-in-out infinite;
 }
 
 h1 {
@@ -231,4 +232,13 @@ transition: all 0.5 ease;
     radial-gradient(circle at 10% 20%, var(--primary-color), transparent 20%),
     radial-gradient(circle at 90% 80%, var(--secondary-color), transparent 20%),
     var(--background-color);
+}
+
+@keyframes flutuar {
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-20px);
+}
 }
